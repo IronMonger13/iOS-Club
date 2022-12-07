@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Club Email Template</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/SKfvsds/reference.png">
+</head>
+
+<style>
+    /* GENERAL CSS */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        transition: ease-in-out;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    button:active {
+        transform: translateY(3px);
+        transition: ease-in-out;
+    }
+
+    button:hover {
+        box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.24);
+        transition: ease-in-out;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: white;
+    }
+
+    .wrapper {
+        background-color: #090a0e;
+        margin: 0;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+
+    /* iOS CLUB HEADING CSS */
+    .title {
+        margin: 10px 0 0 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: clamp(2.3rem, 3.2vw, 4.4rem);
+        color: white;
+        background-color: #090a0e;
+    }
+
+
+
+    /* PRINT PAGE BUTTON CSS */
+    .printPage {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.875rem;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        background-color: whitesmoke;
+    }
+
+
+
+    /* iOS CLUB EVENTS CSS */
+
+    .event {
+        background-color: #cccccc;
+        color: #090a0e;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .eventHeading {
+        margin: 10px 0 0 0;
+        font-size: 2.75rem;
+    }
+
+    .events {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .eventImage {
+        width: 20vw;
+        min-width: 250px;
+        margin-top: 10px;
+    }
+
+    .eventTitle {
+        font-size: 2.25rem;
+        width: fit-content;
+    }
+
+    .eventDesc {
+        margin: 10px 0;
+        color: #090a0e;
+    }
+
+
+
+    /* FOOTER CSS */
+
+    .footerLogo {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .bannerLogo {
+        background-color: #090a0e;
+        width: 12vw;
+        min-width: 150px;
+        margin: 0 auto;
+    }
+
+    .lmao {
+        max-height: 8vh;
+    }
+
+    .footerText {
+        font-size: 1rem;
+        margin-bottom: 8.5px;
+    }
+
+    .socialMedia>a>img {
+        width: 2.35vw;
+        min-width: 30px;
+        margin: 0 auto;
+    }
+
+    .footerInstagram:hover {
+        filter: invert(41%) sepia(17%) saturate(4548%) hue-rotate(290deg) brightness(76%) contrast(99%);
+    }
+
+    .footerLinkedIn:hover {
+        filter: invert(28%) sepia(79%) saturate(2005%) hue-rotate(179deg) brightness(90%) contrast(101%);
+    }
+
+    .footerYoutube:hover {
+        filter: invert(32%) sepia(91%) saturate(7409%) hue-rotate(355deg) brightness(93%) contrast(119%);
+    }
+
+    .sendMail {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.875rem;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 7px 15px;
+        border-radius: 8px;
+        border: none;
+        background-color: whitesmoke;
+    }
+
+
+
+    /* MEDIA QUERIES */
+    @media screen and (max-width: 812px) {
+        .wrapper {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <center class="wrapper">
+
+        <!-- IOS CLUB TEXT, PRINT PAGE BUTTON -->
+        <br><br><br>
+        <h1 class="title">Build an iOS ecosystem with us</h1>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <br>
+        <button class="printPage" onclick="window.print()">Print This Page</button>
+        <br><br>
+
+
+
+        <!-- EVENTS ORGANISED -->
+        <div class="event">
+            <br><br>
+            <h1 class="eventHeading">EVENTS ORGANISED</h1>
+            <br>
+            <div class="events">
+                <div>
+                    <img class="eventImage" src="https://i.ibb.co/QCgfkLk/event.jpg" alt="iOS Club Event 1 image">
+                    <h2 class="eventTitle">Event #1</h2>
+                    <p class="eventDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                    <img class="eventImage" src="https://i.ibb.co/QCgfkLk/event.jpg" alt="iOS Club Event 2 image">
+                    <h2 class="eventTitle">Event #2</h2>
+                    <p class="eventDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                    <img class="eventImage" src="https://i.ibb.co/QCgfkLk/event.jpg" alt="iOS Club Event 3 image">
+                    <h2 class="eventTitle">Event #3</h2>
+                    <p class="eventDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div>
+                    <img class="eventImage" src="https://i.ibb.co/QCgfkLk/event.jpg" alt="iOS Club Event 4 image">
+                    <h2 class="eventTitle">Event #4</h2>
+                    <p class="eventDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+        <center>
+            <br>
+            <div class="footerLogo">
+                <img class="bannerLogo" src="https://i.ibb.co/SKfvsds/reference.png" alt="iOS Club logo image">
+                <img class="bannerLogo lmao" src="https://i.ibb.co/x8BCZH6/vit-Logo-removebg-preview.png"
+                    alt="VIT Bhopal logo">
+            </div>
+            <br>
+            <div class="socialMedia">
+                <p class="footerText">Connect With Us</p>
+                <a class="footerInstagram" href="https://www.instagram.com/iosclub_vitb/"><img
+                        src="https://i.ibb.co/r27Wjrk/white-instagram.png" alt="iOS Club Instagram"></a>
+                <a class="footerLinkedIn" href="https://www.linkedin.com/company/ios-club-vit-bhopal/"><img
+                        src="https://i.ibb.co/Gn323tq/white-linkedin.png" alt="iOS Club LinkedIn"></a>
+                <a class="footerYoutube" href="https://www.youtube.com/channel/UCqUYjA1pjpdrDFJDzTb45PA"><img
+                        src="https://i.ibb.co/f99FWmq/white-youtube.png" alt="iOS Club Youtube"></a>
+            </div>
+            <br>
+            <div class="mail">
+                <p class="footerText">Have a Query?</p>
+                <a href="mailto:iosclubvitb@gmail.com?subject = Feedback"><button class="sendMail">Send an
+                        email</button></a>
+            </div>
+        </center>
+        <br><br>
+
+    </center>
+</body>
+
+</html>
